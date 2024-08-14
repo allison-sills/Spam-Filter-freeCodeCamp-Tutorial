@@ -4,35 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Learn Regular Expressions by Building a Spam Filter</title>
+    <!-- Link to the external stylesheet for custom styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
+    <!-- Header section containing the main title and description -->
     <header class="main-text">
-      <h1 class="title">Is this Spam?</h1>
+      <h1 class="title">Is this Spam?</h1> <!-- Main title of the page -->
       <p class="description">
         Enter a phrase to check if it would be marked as spam or not.
-      </p>
+      </p> <!-- Description explaining the purpose of the tool -->
     </header>
 
+    <!-- Main content section where the user inputs a message and checks if it's spam -->
     <main>
+      <!-- Label for the message input area -->
       <label class="message-label" for="message-input">Message: </label>
+      <!-- Textarea for users to enter the message they want to check -->
       <textarea
-        placeholder="Enter message here"
+        placeholder="Enter message here" <!-- Placeholder text guiding the user -->
         value=""
         type="text"
         name="message"
-        id="message-input"
+        id="message-input" <!-- ID used to reference this element in JavaScript -->
         rows="10"
         cols="40"
       ></textarea>
+      <!-- Button that triggers the spam check when clicked -->
       <button class="btn" id="check-message-btn" type="button">
         Check message
       </button>
+      <!-- Paragraph element where the result of the spam check will be displayed -->
       <p id="result"></p>
     </main>
 
+    <!-- Footer section for copyright information -->
     <footer class="footer">&copy; freeCodeCamp</footer>
+    <!-- Link to the external JavaScript file that contains the spam filter logic -->
     <script src="./script.js"></script>
   </body>
 </html>
