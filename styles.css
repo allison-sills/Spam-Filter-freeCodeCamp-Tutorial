@@ -1,3 +1,4 @@
+/* Universal selector to reset margin and padding for all elements */
 *,
 *::before,
 *::after {
@@ -6,6 +7,7 @@
   padding: 0;
 }
 
+/* Defining CSS variables for colors */
 :root {
   --dark-grey: #1b1b32;
   --light-grey: #f5f6f7;
@@ -16,65 +18,77 @@
   --dark-orange: #f89808;
 }
 
+/* Setting the background and text color for the body */
 body {
   background-color: var(--dark-grey);
   color: var(--light-grey);
 }
 
+/* Align text to center for the body and when the textarea is empty (placeholder shown) */
 body,
 #message-input:placeholder-shown {
   text-align: center;
 }
 
+/* Limiting the maximum width of the textarea to 90% of its container */
 textarea {
   max-width: 90%;
 }
 
+/* Adding margin around the header section */
 .main-text {
   margin: 25px 0;
 }
 
+/* Styling the main title */
 .title {
   font-size: 2.5rem;
 }
 
+/* Styling the description paragraph */
 .description {
   margin-top: 15px;
   font-size: 1.4rem;
 }
 
+/* Styling the label for the message input */
 .message-label {
   display: block;
   margin-bottom: 20px;
   font-size: 1.5rem;
 }
 
+/* Styling the textarea and adjusting the font size */
 #message-input:placeholder-shown,
 textarea {
   font-size: 1.1rem;
 }
 
+/* Styling the button */
 .btn {
   display: block;
   cursor: pointer;
   width: 200px;
   margin: 10px auto;
-  color: var(--dark-grey);
-  background-color: var(--gold);
-  background-image: linear-gradient(var(--golden-yellow), var(--orange));
-  border-color: var(--gold);
+  color: var(--dark-grey); /* Text color */
+  background-color: var(--gold); /* Background color */
+  background-image: linear-gradient(var(--golden-yellow), var(--orange)); /* Gradient background */
+  border-color: var(--gold); /* Border color */
   border-width: 3px;
 }
 
+/* Changing the background gradient on hover */
 .btn:hover {
   background-image: linear-gradient(var(--yellow), var(--dark-orange));
 }
 
+/* Styling the result text */
 #result {
   font-size: 2rem;
   margin: 20px 0;
 }
 
+/* Adding some margin to the footer */
 .footer {
   margin-top: 10px;
 }
